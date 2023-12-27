@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>입력 양식 태그</title>
+</head>
+<body>
+	
+	<!--form은 데이터를 전송하기 위한 태그입니다-->
+	<h3>Registry enrollment</h3>
+	<form>
+		<!-- input태그에는 입력 type과 고유 name을 지정해주어야 합니다.-->
+		ID: <input type="text" 
+					name="ID" 
+					size="10" 
+					maxlength="7"
+					placeholder="Type ID">
+		<br>
+		PW: <input type="password" 
+					name="password">
+		<br>
+		BIRTH: <input type="date" 
+						name="birth">
+		<br>
+		AGE: <input type="number" 
+						name="age">
+		<br>
+		<!--checkbox는 여러개 선택이 가능합니다-->
+		HOB: Football<input type="checkbox"
+								name="cb1">
+		 		Baseball<input type="checkbox"
+								name="cb1">
+		 		Basketball<input type="checkbox"
+								name="cb1">
+		 		Softball<input type="checkbox"
+								name="cb1">
+		 		AmericanFootball<input type="checkbox"
+		
+								name="cb1"> <!-- 동일한 그룹은 동일한 name을 가집니다-->
+		<br>
+		<!-- radio는 한개만 선택이 가능합니다.-->
+		SUB:
+		CC <input type="radio" name="radio">
+		CS <input type="radio" name="radio">
+		QS <input type="radio" name="radio">
+		DS <input type="radio" name="radio">
+		FS <input type="radio" name="radio">
+		<br>
+		나를 소개하시오
+		<!--긴글 입력하기에는 textarea속성을 사용합니다.-->
+		<textarea rows="10" cols="50">
+			
+		</textarea>
+		<br>
+		State:
+		<select name="state">
+			<option>MA</option>
+			<option>NY</option>
+			<option>LA</option>
+			<option>FL</option>
+		</select>				
+								
+		<br>
+		<!--버튼추가 기능입니다. 나중에 JS에서 구현합니다-->
+		<input type="button" value="nothing" name="button">			
+		
+		<!--폼양식을 초기화 하는 기능입니다.-->
+		<br>
+		<input type="reset" value="Reset" name="reset">
+		<br>
+		<!-- 제출하는 기능입니다.-->
+		<input type="submit" value="Regist" name="submit">		
+	</form>
+
+</body>
+</html>

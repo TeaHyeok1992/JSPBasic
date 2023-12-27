@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<!-- 테이블 태그
+엑셀 표와 같은 테이블을 나타낼 때 사용합니다.
+border속성이 존재합니다. 윤곽을 나타냅니다.
+th는 제목을 나타냅니다
+tr 은 행을 나타냅니다
+td 은 열을 나타냅니다.-->
+	
+	<h3>테이블 태그 그리기</h3>
+	<table border="1" style="text-align: center;vertical-align: middle;" >
+		<tr>
+			<th>Name</th>
+			<th>Age</th>
+			<th>Result</th>
+			
+		</tr>
+		<tr>
+			<td>Hong</td>
+			<td style="text-align: center;vertical-align: middle;">20</td>
+			<td rowspan="4">empty</td> <!--행 합치기-->
+		</tr>
+		<tr>
+			<td style="text-align: right;vertical-align: middle;">Lee</td>
+			<td>30</td>
+		</tr>
+		<tr>
+			<td>SOO</td>
+			<td>30</td>
+		</tr>
+		<tr>
+			<td colspan="2">Average</td> <!--열합치기-->
+			
+			
+		</tr>
+		
+	</table>
+	
+	
+</body>
+</html>
