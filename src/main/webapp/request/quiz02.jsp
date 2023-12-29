@@ -14,7 +14,11 @@
 	화면에 이름, 키, 몸무게 BMI지수를 출력
 	if을 통해 BMI지수가 25이상 과체중, 18 이하라면 저체중, 나머지는 정상으로 출력 -->
 	<form action="quiz02_OK.jsp" method="post">
-		<table border="0">
+		<table>
+			 <tr>
+			 	<td>이름:</td>
+			 	<td><input type="text" name="name" placeholder="something"></td>
+			 </tr>		
 			 <tr>
 			 	<td>키:</td>
 		     	<td><input type="number" name="height" placeholder="cm"></td>
