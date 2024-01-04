@@ -25,7 +25,24 @@
 			</x:choose>
 		</x:when>
 		<x:when test="${sc>=80}">
-			<b>B</b>
+			<x:choose>
+				<x:when test="${sc>=85 }">
+					<b>B+</b>
+				</x:when>
+				<x:otherwise>
+					<b>B</b>
+				</x:otherwise>
+			</x:choose>
+		</x:when>
+		<x:when test="${sc>=70}">
+			<x:choose>
+				<x:when test="${sc>=75}">
+					<b>C+</b>
+				</x:when>
+				<x:otherwise>
+					<b>C</b>
+				</x:otherwise>
+			</x:choose>	
 		</x:when>
 		<x:otherwise>
 			<b>F</b>

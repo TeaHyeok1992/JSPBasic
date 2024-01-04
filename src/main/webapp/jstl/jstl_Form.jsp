@@ -25,7 +25,8 @@
 		<input type="submit" value="Confirm">
 	
 	</form>
-	
+	<hr>
+		
 	
 </body>
 </html>
